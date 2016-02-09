@@ -1,14 +1,4 @@
-import Home       from '../../pages/home/home-index';
-import Page1      from '../../pages/page1/page1-index';
-import Page2      from '../../pages/page2/page2-index';
-import Page404    from '../../pages/page404/page404-index';
-
-const routes = {
-  '/': Home,
-  '/cancel-sky-tv': Page1,
-  '/downgrade-sky-tv': Page2,
-  '*': Page404
-};
+import routes from './routes'
 
 function ContentRouter(sources) {
   const {router, state$} = sources;

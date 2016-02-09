@@ -12,7 +12,7 @@ classifier.addDocument('my telephone isn\'t working', 'problems-with-sky-talk');
 classifier.addDocument('my sky talk doesn\'t work', 'problems-with-sky-talk');
 
 classifier.addDocument('my internet is slow', 'problems-with-sky-broadband');
-classifier.addDocument('rubbish internet', 'problems-with-sky-broadband');
+classifier.addDocument('slow internet speeds', 'problems-with-sky-broadband');
 classifier.addDocument('broadband not working', 'problems-with-sky-broadband');
 
 classifier.addDocument('I want to pay my bills', 'bills-payments');

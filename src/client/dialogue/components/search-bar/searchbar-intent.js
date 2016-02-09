@@ -14,10 +14,10 @@ const intent = ({DOM}) => {
       return target
     })
     .startWith('')
-    .share();
+
 
   return {
-    apiQuery$: inputFieldChange$,
+    apiQuery$: inputFieldChange$.share(),
   }
 }
 

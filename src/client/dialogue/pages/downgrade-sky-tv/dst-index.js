@@ -1,7 +1,7 @@
 import Rx   from 'rx'
-import view from './page1-view'
+import view from './dst-view'
 
-const Page1 = (sources) => {
+const Page2 = (sources) => {
   const state$ = sources.state$;
   const $view = view(state$);
 
@@ -11,4 +11,4 @@ const Page1 = (sources) => {
   }
 };
 
-export default Page1
+export default Page2

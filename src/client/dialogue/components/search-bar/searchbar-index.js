@@ -5,13 +5,13 @@ import searchbarModel from './searchbar-model'
 const searchBar = (sources) => {
 
   const intent$ = searchbarIntent(sources);
-  const apiQuery$ = searchbarModel(intent$);
-  const view$ = view(sources, intent$);
+  const {mergedQuery$, HTTPres$} = searchbarModel(sources, intent$);
+  const view$ = view(HTTPres$, intent$);
 
   return {
     DOM: view$,
-    HTTP: apiQuery$,
-    //router: httpRes$
+    HTTP: mergedQuery$,
+    router: HTTPres$
   }
 };
 
