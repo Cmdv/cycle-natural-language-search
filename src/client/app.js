@@ -4,20 +4,21 @@ import ContentRouter  from './dialogue/components/content-router/content-router-
 import {div}    from 'cycle-snabbdom'
 
 const view = (navbar, content) => {
-  return div('#layout .pure-g', [
+  return div('#layout .pure-g .polar-container--alpha', [
     div('.content .pure-u-1', [
       div('', [navbar]),
-      div('', [content])
+      div('.sky-content', [content])
     ])
   ])
 };
 
 function main(sources) {
 
-  const Content = ContentRouter(sources);
+  const {DOM, HTTP, router} = searchBar(sources);
+
+  const Content = ContentRouter(sources, Res);
   //const {state$} = Content;
 
-  const {DOM, HTTP, router} = searchBar(sources);
   const searchBarDOM$ = DOM
 
   const view$ = Observable.just(

@@ -22,15 +22,17 @@ h3 {
     max-width: 100%;
     height: auto;
 }
-
+.sky-content {
+  min-height:300px;
+}
 #layout {
     padding: 0;
 }
 
 .header {
-    text-align: center;
-    top: auto;
-    margin: 3em auto;
+  text-align: center;
+  top: auto;
+  margin: 3em auto;
 }
 
 .sidebar {
@@ -41,6 +43,7 @@ h3 {
 .brand-title,
 .brand-tagline {
     margin: 0;
+  color: #333333;
 }
 .brand-title {
     text-transform: uppercase;
@@ -90,8 +93,8 @@ h3 {
 }
 
 .content-subhead {
-    color: #aaa;
-    border-bottom: 1px solid #eee;
+    color: #333333;
+    border-bottom: 1px solid #bebebe;
     padding: 0.4em 0;
     font-size: 80%;
     font-weight: 500;
@@ -100,6 +103,13 @@ h3 {
 
 .content {
     padding: 2em 1em 0;
+}
+
+.polar-container--alpha {
+  margin-top: 12em;
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJo…oZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+");
+  background-image: -webkit-linear-gradient(left, #c9c7d2 0%, #fbfbfd 40%, #fbfbfd 50%, #fbfbfd 60%, #c9c7d2 100%);
+  background-image: linear-gradient(to right, #c9c7d2 0%, #fbfbfd 40%, #fbfbfd 50%, #fbfbfd 60%, #c9c7d2 100%);
 }
 
 .post {
