@@ -9,11 +9,12 @@ const searchBarModel = (sources, intent$) => {
         method: 'GET',
       };
     })
-    .skip(1).do(x => console.log(x))
+    .skip(1)
 
   const HTTPres$ = sources.HTTP.flatMap(x => x)
-    .map(res => res.text + '/')
-    .startWith([])
+    .map(res => '/' + res.text)
+    .startWith('/')
+    .shareReplay(1)
 
   return {
     mergedQuery$,

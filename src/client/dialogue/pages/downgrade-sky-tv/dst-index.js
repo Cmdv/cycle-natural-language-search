@@ -1,13 +1,11 @@
 import Rx   from 'rx'
 import view from './dst-view'
 
-const Page2 = (sources) => {
-  const state$ = sources.state$;
-  const $view = view(state$);
+const Page2 = () => {
 
+  const view$ = Rx.Observable.just(view());
   return {
-    DOM: Rx.Observable.just($view),
-    state$: state$,
+    DOM: view$
   }
 };
 

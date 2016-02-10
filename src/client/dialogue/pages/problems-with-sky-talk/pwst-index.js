@@ -1,13 +1,10 @@
 import Rx   from 'rx'
 import view from './pwst-view'
 
-const Page1 = (sources) => {
-  const state$ = sources.state$;
-  const $view = view(state$);
-
+const Page1 = () => {
+  const view$ = Rx.Observable.just(view());
   return {
-    DOM: Rx.Observable.just($view),
-    state$: state$,
+    DOM: view$
   }
 };
 

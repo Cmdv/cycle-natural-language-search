@@ -1,14 +1,13 @@
 import Rx   from 'rx'
 import view from './pwsb-view'
 
-const Page1 = (sources) => {
-  const state$ = sources.state$;
-  const $view = view(state$);
+const problemsWithSkyBroadband = (sources) => {
+
+  const view$ = Rx.Observable.just(view());
 
   return {
-    DOM: Rx.Observable.just($view),
-    state$: state$,
+    DOM: view$
   }
 };
 
-export default Page1
+export default problemsWithSkyBroadband
