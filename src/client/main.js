@@ -15,7 +15,7 @@ require("!style!css!./styles/grids-responsive-min.css");
 const sources = {
   DOM: makeDOMDriver('#application'),
   router: makeRouterDriver(makeHistoryDriver(createHashHistory())),
-  state$: makeStateDriver(),
+  //state$: makeStateDriver(),
   HTTP: makeHTTPDriver(),
 };
 

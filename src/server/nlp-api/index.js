@@ -27,5 +27,6 @@ classifier.train();
 
 
 export default function nlpApi(value) {
+  console.log('Response: ',classifier.classify(value));
   return classifier.classify(value);
 }

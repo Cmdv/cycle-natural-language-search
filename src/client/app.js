@@ -15,7 +15,7 @@ const view = (navbar, content) => {
 function main(sources) {
 
   const Content = ContentRouter(sources);
-  const {state$} = Content;
+  //const {state$} = Content;
 
   const {DOM, HTTP, router} = searchBar(sources);
   const searchBarDOM$ = DOM
@@ -30,7 +30,7 @@ function main(sources) {
   return {
     DOM: view$,
     router: router.startWith('/'),
-    state$: state$.startWith({counter: 0}),
+    //state$: state$.startWith({counter: 0}),
     HTTP: HTTP
   }
 };

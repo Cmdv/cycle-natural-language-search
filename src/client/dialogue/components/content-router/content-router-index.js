@@ -6,7 +6,7 @@ function ContentRouter(sources) {
 
   const childrenDOM$ = path$.zip(value$,
     (path, value) => {
-      const comp = value({...sources, router: router.path(path), state$: state$.take(1)})
+      const comp = value({...sources, router: router.path(path), /* state$: state$.take(1) */})
       return {
         DOM: comp.DOM,
         state$: comp.state$

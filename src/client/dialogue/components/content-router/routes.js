@@ -5,6 +5,7 @@ import Home                     from '../../pages/home/home-index';
 import Page404                  from '../../pages/page404/page404-index';
 import problemsWithSkyBroadband from '../../pages/problems-with-sky-broadband/pwsb-index';
 import problemsWithSkyTalk      from '../../pages/problems-with-sky-talk/pwst-index';
+import problemsWithSkyTv      from '../../pages/problems-with-sky-tv/pwstv-index';
 
 const routes = {
   '/': Home,
@@ -13,7 +14,8 @@ const routes = {
   '/downgrade-sky-tv': downgradeSkyTv,
   '/problems-with-sky-broadband': problemsWithSkyBroadband,
   '/problems-with-sky-talk': problemsWithSkyTalk,
-  '/*': Page404
+  '/problems-with-sky-tv': problemsWithSkyTv,
+  '*': Page404
 };
 
 export default routes
