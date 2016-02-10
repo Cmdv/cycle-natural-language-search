@@ -1,6 +1,6 @@
 import test             from 'tape'
 import {Observable}     from 'rx'
-import {mockDOMSource}  from '@cycle/dom'
+import {mockDOMSource}  from 'cycle-snabbdom'
 import navbarIntent     from '../searchbar-intent'
 import navbarModel      from '../searchbar-model'
 import mockClickEvent   from './mockClickEvent'

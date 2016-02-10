@@ -5,7 +5,7 @@ import createRenderTarget   from './helper/createRenderTarget';
 import {makeHistoryDriver}  from '@cycle/history';
 import Main                 from '../app';
 import Cycle                from '@cycle/core';
-import {h,makeDOMDriver,h2, h3, h4, div} from '@cycle/dom';
+import {h,makeDOMDriver,h2, h3, h4, div} from 'cycle-snabbdom';
 
 test('DOM ISOLATED TESTS EXAMPLE #', function(t) {
   t.plan(6);

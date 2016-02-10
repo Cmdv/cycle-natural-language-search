@@ -1,7 +1,7 @@
 import test                 from 'tape'
 import Rx                   from 'rx'
 import Cycle                from '@cycle/core'
-import {div, makeDOMDriver} from '@cycle/dom'
+import {div, makeDOMDriver} from 'cycle-snabbdom'
 import {makeHistoryDriver}  from '@cycle/history';
 import page1                from '../problems-with-sky-talk-index'
 import createRenderTarget   from '../../../../__test__/helper/createRenderTarget'

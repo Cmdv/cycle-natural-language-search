@@ -2,7 +2,7 @@ import test               from 'tape'
 import {Observable}       from 'rx'
 import {mockDOMSource,
   div,
-  makeDOMDriver}    from '@cycle/dom'
+  makeDOMDriver}    from 'cycle-snabbdom'
 import Cycle              from '@cycle/core'
 import intent             from '../home-intent'
 import model              from '../home-model'

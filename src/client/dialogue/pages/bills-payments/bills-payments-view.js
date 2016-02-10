@@ -1,4 +1,4 @@
-import {h, div, h1,} from '@cycle/dom'
+import {h, div, h1,} from 'cycle-snabbdom'
 
 const view = () => {
   return div([

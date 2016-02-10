@@ -1,7 +1,7 @@
 import {Observable}   from 'rx'
 import searchBar      from './dialogue/components/search-bar/searchbar-index'
 import ContentRouter  from './dialogue/components/content-router/content-router-index'
-import {div}    from '@cycle/dom'
+import {div}    from 'cycle-snabbdom'
 
 const view = (navbar, content) => {
   return div('#layout .pure-g', [

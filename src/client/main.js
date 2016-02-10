@@ -1,5 +1,5 @@
 import {run}                from '@cycle/core';
-import {makeDOMDriver}      from '@cycle/dom';
+import {makeDOMDriver}      from 'cycle-snabbdom';
 import {makeHTTPDriver}     from '@cycle/http';
 import {makeHistoryDriver}  from 'cyclic-history'
 import {makeRouterDriver}   from 'cyclic-router'

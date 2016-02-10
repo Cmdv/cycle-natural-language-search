@@ -1,4 +1,4 @@
-import {p, h, div, ul, li, a, input, h1, h2} from '@cycle/dom'
+import {p, h, div, ul, li, a, input, h1, h2} from 'cycle-snabbdom'
 
 function view (HTTPres$) {
   return HTTPres$
